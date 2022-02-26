@@ -756,3 +756,146 @@ html {
     }
   }
   
+  /* Services Section */
+  .sponsors {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .sponsors h1 {
+    background-color: #ff8177;
+    background-image: linear-gradient(
+      to right,
+      #ff8177 0%,
+      #ff867a 0%,
+      #ff8c7f 21%,
+      #f99185 52%,
+      #cf556c 78%,
+      #b12a5b 100%
+    );
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+  }
+
+  
+  .sponsors__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .sponsors__card {
+    margin: 1rem;
+    height: 100px;
+    width: 100px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(17, 17, 17, 0.6) 100%
+      ),
+      url('images/sponsor2.png');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+  }
+  
+  .sponsors__card:before {
+    opacity: 0.2;
+  }
+  
+
+  .sponsors__card h2 {
+    position: absolute;
+    top: 250px;
+    left: 490px;
+  }
+  
+  .sponsors__card p {
+    position: absolute;
+    top: 300px;
+    left: 490px;
+  }
+  
+  .sponsors__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f77062;
+    position: absolute;
+    top: 270px;
+    left: 460px;
+    font-size: 1rem;
+  }
+  
+  .sponsors__card button:hover {
+    cursor: pointer;
+  }
+  
+  .sponsors__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .sponsors {
+      height: 1600px;
+    }
+  
+    .sponsors h1 {
+      font-size: 2rem;
+      margin-top: 12rem;
+    }
+    .sponsors__card {
+      height: 150px;
+      width: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sponsors {
+      height: 1400px;
+    }
+  
+    .sponsors h1 {
+      font-size: 1.2rem;
+    }
+  
+    .sponsors__card {
+      width: 300px;
+    }
+  }
+
+
+  .becomeasponsor {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .becomeasponsor h1 {
+    font-size: 4rem;
+    margin-top: 10px;
+    background-color: #ff8177;
+    background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
