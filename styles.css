@@ -736,7 +736,7 @@ html {
    
   }
   
-  @media screen and (max-width: 905px) {
+  @media screen and (max-width: 978px) {
     .merch__card {
       height: 240px;
       width: 720px;
@@ -747,7 +747,7 @@ html {
     }
   }
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 786px) {
     .merch__card {
       height: 179px;
       width: 537px;
@@ -757,14 +757,14 @@ html {
       left: 215px;
     }
   }
-  @media screen and (max-width: 555px) {
+  @media screen and (max-width: 594px) {
     .merch__card {
-      height: 132px;
-      width: 396px;
+      height: 125px;
+      width: 375px;
     }
     .merch__card button {
-      top: 100px;
-      left: 165px;
+      top: 90px;
+      left: 150px;
       padding: 3px 6px;
       font-size: .8rem;
     }
