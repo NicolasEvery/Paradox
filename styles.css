@@ -223,8 +223,9 @@ html {
         rgba(17, 17, 17, 0.9) 100%
       ),
       url('images/keyboard.jpeg');
-  
+      background-position: center center;
     background-color: #131313;
+    background-repeat: no-repeat;
     z-index: 1;
     width: 100%;
 
@@ -486,9 +487,7 @@ html {
       height: 1400px;
     }
   
-    .services h1 {
-      font-size: 1.2rem;
-    }
+
   
     .services__card {
       width: 300px;
@@ -674,7 +673,9 @@ html {
         rgba(17, 17, 17, 0.6) 100%
       ),
       url('Logo/MERCH/1500x500.png');
-    background-size: cover;
+      background-position: center center;
+      background-size: contain;    
+      background-repeat: no-repeat;
     position: relative;
     color: #fff;
   }
@@ -683,14 +684,7 @@ html {
     opacity: 0.2;
   }
   
-  .merch__card:nth-child(2) {
-    background-image: linear-gradient(
-        to bottom,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(17, 17, 17, 0.9) 100%
-      ),
-      url('images/person2.jpeg');
-  }
+
 
   .merch__card h2 {
     position: absolute;
@@ -728,35 +722,67 @@ html {
     transition: 0.2s ease-in;
 
   }
-  
-  @media screen and (max-width: 960px) {
-    .merch {
-      height: 1600px;
-    }
-  
-    .merch h1 {
-      font-size: 2rem;
-      margin-top: 12rem;
-    }
+
+  @media screen and (max-width: 1060px) {
     .merch__card {
-      height: 150px;
-      width: 450px;
+      height: 300;
+      width: 900px;
+    }
+    .merch__card button {
+      top: 270px;
+      left: 390px;
+    }
+  
+   
+  }
+  
+  @media screen and (max-width: 905px) {
+    .merch__card {
+      height: 240px;
+      width: 720px;
+    }
+    .merch__card button {
+      top: 180px;
+      left: 300px;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .merch__card {
+      height: 179px;
+      width: 537px;
+    }
+    .merch__card button {
+      top: 130px;
+      left: 215px;
+    }
+  }
+  @media screen and (max-width: 555px) {
+    .merch__card {
+      height: 132px;
+      width: 396px;
+    }
+    .merch__card button {
+      top: 100px;
+      left: 165px;
+      padding: 3px 6px;
+      font-size: .8rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    .merch__card {
+      height: 95px;
+      width: 285px;
+    }
+    .merch__card button {
+      top: 70px;
+      left: 110px;
+      padding: 3px 6px;
+      font-size: .7rem;
     }
   }
   
-  @media screen and (max-width: 480px) {
-    .merch {
-      height: 1400px;
-    }
-  
-    .merch h1 {
-      font-size: 1.2rem;
-    }
-  
-    .merch__card {
-      width: 300px;
-    }
-  }
+
   
   /* Services Section */
   .sponsors {
@@ -1066,4 +1092,42 @@ label.fcf-label {
 
 input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
     width: 100%;
+}
+
+
+.news {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200vh;
+}
+.news h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(
+    to right,
+    #ff8177 0%,
+    #ff867a 0%,
+    #ff8c7f 21%,
+    #f99185 52%,
+    #cf556c 78%,
+    #b12a5b 100%
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.news__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.twitter-tweet {
+  width: 75% !important;
 }
