@@ -521,7 +521,7 @@ html {
 
 @media screen and (max-width: 960px) {
   .services {
-    height: 1600px;
+    height: 3600px;
   }
 
   .services h1 {
@@ -530,17 +530,14 @@ html {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 864px) {
   .services {
-    height: 1400px;
+    height: 7200px;
   }
 
 
 
   .services__card {
-    width: 300px;
-  }
-  .contentCreators__card {
     width: 300px;
   }
 }
@@ -610,6 +607,15 @@ html {
 .contentCreators__card:hover {
   transform: scale(1.075);
   transition: 0.2s ease-in;
+}
+
+@media screen and (max-width: 864px) {
+  .services {
+    height: 7200px;
+  }
+  .contentCreators__card {
+    width: 300px;
+  }
 }
 /* Footer CSS */
 .footer__container {
@@ -1043,6 +1049,11 @@ color: #fff;
   -moz-text-fill-color: transparent;
   margin-bottom: 5rem;
   font-size: 2.5rem;
+}
+@media screen and (max-width: 480px) {
+  .becomeasponsor h1{
+    font-size: 2rem;
+  }
 }
 
 
